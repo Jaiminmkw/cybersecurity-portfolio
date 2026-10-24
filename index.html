@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaimin Makwana | SOC Analyst and Cybersecurity Analyst</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter, JetBrains Mono & Merriweather -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            dark: '#070B12',
+                            card: '#0F172A',
+                            border: '#1E293B',
+                            accent: '#06B6D4',
+                            emerald: '#10B981',
+                            glow: 'rgba(6, 182, 212, 0.15)'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                        serif: ['Merriweather', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #070B12;
+            color: #E2E8F0;
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(30, 41, 59, 0.8);
+        }
+        .glass-card:hover {
+            border-color: rgba(6, 182, 212, 0.4);
+            box-shadow: 0 0 25px rgba(6, 182, 212, 0.1);
+        }
+        .glow-text {
+            text-shadow: 0 0 12px rgba(6, 182, 212, 0.5);
+        }
+        .tech-ring {
+            background: linear-gradient(135deg, #06B6D4 0%, #10B981 100%);
+        }
+        .heading-serif {
+            font-family: 'Merriweather', serif;
+        }
+    </style>
+</head>
+<body class="selection:bg-cyan-500 selection:text-black min-h-screen flex flex-col">
+
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-card border-b border-slate-800/80 bg-slate-950/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo / Brand (With Serif Font) -->
+                <a href="#hero" class="flex items-center gap-2 group">
+                    <span class="heading-serif font-bold text-xl tracking-tight text-white group-hover:text-cyan-400 transition">
+                        Jaimin Makwana
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation (Serif Font - Skills Removed) -->
+                <div class="hidden md:flex items-center space-x-6 text-sm font-medium heading-serif">
+                    <a href="#about" class="text-slate-300 hover:text-cyan-400 transition">About</a>
+                    <a href="#projects" class="text-slate-300 hover:text-cyan-400 transition">Projects</a>
+                    <a href="#experience" class="text-slate-300 hover:text-cyan-400 transition">Experience</a>
+                    <a href="#certificates" class="text-slate-300 hover:text-cyan-400 transition">Certificates</a>
+                    <a href="#contact" class="px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/40 text-cyan-400 hover:bg-cyan-500 hover:text-black font-semibold transition duration-300">
+                        Connect Me
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden text-slate-300 hover:text-cyan-400 focus:outline-none p-2">
+                    <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown (Serif Font - Skills Removed) -->
+        <div id="mobile-menu" class="hidden md:hidden glass-card border-b border-slate-800 px-4 pt-2 pb-6 space-y-3 heading-serif">
+            <a href="#about" class="block text-slate-300 hover:text-cyan-400 py-1">About</a>
+            <a href="#projects" class="block text-slate-300 hover:text-cyan-400 py-1">Projects</a>
+            <a href="#experience" class="block text-slate-300 hover:text-cyan-400 py-1">Experience</a>
+            <a href="#certificates" class="block text-slate-300 hover:text-cyan-400 py-1">Certificates</a>
+            <a href="#contact" class="inline-block mt-2 px-4 py-2 rounded-lg bg-cyan-500 text-black font-semibold">Connect Me</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow pt-20">
+
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-[85vh] flex items-center justify-center relative overflow-hidden py-16 px-4 sm:px-6 lg:px-8">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(6,182,212,0.08)_0,transparent_70%)]"></div>
+            
+            <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+                <!-- Hero Photo (Left Side) -->
+                <div class="lg:col-span-5 flex justify-center order-1">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 rounded-full tech-ring blur opacity-40 group-hover:opacity-75 transition duration-500"></div>
+                        <div class="relative w-60 h-60 sm:w-72 sm:h-72 rounded-full glass-card p-2 overflow-hidden flex flex-col items-center justify-center border-2 border-cyan-500/50 shadow-2xl shadow-cyan-500/20">
+                            <!-- Image / Fallback Avatar -->
+                            <div class="w-full h-full rounded-full bg-slate-900 flex flex-col items-center justify-center relative overflow-hidden">
+                                <img src="C:\Users\Jaimin Makwana\Desktop\Portfolio\image.jpeg" 
+                                     alt="Jaimin Makwana" 
+                                     class="w-full h-full object-cover rounded-full"
+                                     onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center h-full text-cyan-400\'><i class=\'fa-solid fa-user-shield text-6xl mb-3\'></i><span class=\'font-mono text-sm text-slate-300\'>Jaimin Makwana</span></div>';" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Text (Right Side) -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left order-2">
+                    <h1 class="text-4xl sm:text-6xl heading-serif font-bold tracking-tight text-cyan-400 leading-tight">
+                        Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 glow-text">Jaimin Makwana.</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-2x text-slate-200 font-sans leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Aspiring SOC Analyst | Cybersecurity Enthusiast, Passionate about threat detection, network security, and security operations. Building hands-on cybersecurity projects, including a wireless honeypot and real-time SOC dashboard, to explore attack detection, monitoring, and incident analysis.
+                    </p>
+
+                    <blockquote class="text-slate-400 italic text-sm sm:text-base border-l-2 border-cyan-500/50 pl-4 my-4 max-w-xl mx-auto lg:mx-0 font-mono">
+                        "Securing systems. Detecting threats. Learning every day."
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-800/60">
+            <div class="text-center mb-12">
+                <h2 class="text-xs font-mono text-cyan-400 tracking-widest uppercase mb-2"></h2>
+                <h3 class="text-3xl heading-serif font-bold text-white">About Me</h3>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-12 glass-card p-6 sm:p-8 rounded-2xl space-y-6 border border-slate-800">
+                    <p class="text-slate-300 leading-relaxed text-base sm:text-lg">
+                        I am an aspiring Cybersecurity Professional pursuing a <strong class="text-cyan-400"> B.Tech in Computer Science Engineering (Cyber Security)</strong> at Silver Oak University. My key interests include SOC Operations, Threat Detection, Network Security, Digital Forensics, and Cybercrime Investigation. 
+                    </p>
+                    <p class="text-slate-400 leading-relaxed text-sm sm:text-base">
+                        I have developed<strong class="text-white"> HoneyGrid, a smart wireless honeypot and real-time SOC dashboard using ESP32, ESP8266</strong> and web technologies, along with an <strong class="text-white">ESP8266-based Wi-Fi Penetration Testing Tool</strong> to explore Evil Twin and deauthentication attacks in controlled environments.
+                    </p>
+                     <p class="text-slate-400 leading-relaxed text-sm sm:text-base">
+                        Beyond project development, I am interested in<strong class="text-white"> Security monitoring, vulnerability assessment, incident analysis, and digital forensic investigation.</strong>  I continuously work on strengthening my technical skills and understanding how cyber threats can be detected, analyzed, and mitigated. <strong class="text-cyan-400">I am currently seeking cybersecurity internship opportunities to gain practical experience and contribute to real-world security challenges.</strong>
+                    </p>
+
+                    <!-- View Resume Button (Centered) -->
+                    <div class="pt-4 flex justify-center">
+                        <a href="C:\Users\Jaimin Makwana\Desktop\Portfolio\CV.pdf" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-cyan-500/10 text-cyan-400 border border-cyan-500/40 hover:bg-cyan-500 hover:text-slate-950 font-semibold text-sm transition shadow-lg shadow-cyan-500/10">
+                            <i class="fa-solid fa-file-pdf text-base"></i> View My Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-800/60">
+            <div class="text-center mb-12">
+                <h2 class="text-xs font-mono text-cyan-400 tracking-widest uppercase mb-2"> </h2>
+                <h3 class="text-3xl heading-serif font-bold text-white">Projects</h3>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Project 1: HoneyGrid -->
+                <div class="glass-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between border border-slate-800 relative group overflow-hidden">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 font-mono text-xs">
+                                🌟 Flagship Project
+                            </span>
+                            <i class="fa-solid fa-shield-cat text-2xl text-cyan-400"></i>
+                        </div>
+
+                        <h4 class="text-xl font-bold text-white group-hover:text-cyan-400 transition">
+                            Smart Wireless Honeypot & Real-Time SOC Dashboard (HoneyGrid)
+                        </h4>
+
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Developed a wireless honeypot system using ESP32 & ESP8266 to capture and monitor raw 802.11 attack vectors (Deauth, Beacon, Probe, Karma and Evil-Twin Attack). Additional Attacks ( HTTP_Flood, ARP_Spoof, PORT_Scan, Brute_Force). Integrated a real-time web SOC dashboard using WebSockets to display live attack alerts, connected devices, and health metrics.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-2.5 py-1 rounded bg-slate-900 text-cyan-400 text-xs font-mono">ESP32</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-900 text-cyan-400 text-xs font-mono">ESP8266</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-900 text-emerald-400 text-xs font-mono">Node.js</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-900 text-slate-300 text-xs font-mono">WebSockets</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-900 text-slate-300 text-xs font-mono">HTML/CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 mt-6 border-t border-slate-800/80 flex items-center gap-4">
+                        <a href="https://github.com/Jaiminmkw/HoneyGrid-SOC-Honeypot" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 hover:bg-cyan-500 hover:text-black font-semibold text-xs transition">
+                            <i class="fa-brands fa-github text-sm"></i> GitHub Repository
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Wi-Fi Pentesting Tool -->
+                <div class="glass-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between border border-slate-800 relative group overflow-hidden">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 font-mono text-xs">
+                                ⚡ Hardware Pentesting
+                            </span>
+                            <i class="fa-solid fa-wifi text-2xl text-emerald-400"></i>
+                        </div>
+
+                        <h4 class="text-xl font-bold text-white group-hover:text-emerald-400 transition">
+                            Wi-Fi Penetration Testing Tool Using ESP8266 (Evil Twin & De-auth)
+                        </h4>
+
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Built an embedded pentesting toolkit using ESP8266 NodeMCU capable of executing De-authentication frames and Evil Twin rogue access point attacks. Features a self-hosted web control interface to launch attacks and log client responses.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-2.5 py-1 rounded bg-slate-900 text-emerald-400 text-xs font-mono">ESP8266 NodeMCU</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-900 text-slate-300 text-xs font-mono">Arduino IDE</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-900 text-slate-300 text-xs font-mono">HTML/CSS</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-900 text-cyan-400 text-xs font-mono">Embedded C</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 mt-6 border-t border-slate-800/80 flex items-center gap-4">
+                        <a href="https://github.com/Jaiminmkw/cyber-" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500 hover:text-black font-semibold text-xs transition">
+                            <i class="fa-brands fa-github text-sm"></i> GitHub Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section id="experience" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-800/60">
+            <div class="text-center mb-12">
+                <h2 class="text-xs font-mono text-cyan-400 tracking-widest uppercase mb-2"></h2>
+                <h3 class="text-3xl heading-serif font-bold text-white">Experience & Roles</h3>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-8 relative before:absolute before:inset-0 before:left-3 sm:before:left-1/2 before:-ml-px before:w-0.5 before:bg-slate-800">
+                <!-- Role 1 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-7 h-7 rounded-full border border-cyan-400 bg-slate-950 text-cyan-400 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 shadow-lg shadow-cyan-500/20">
+                        <i class="fa-solid fa-user-check text-xs"></i>
+                    </div>
+                    <div class="w-[calc(100%-2.5rem)] md:w-[calc(50%-2rem)] glass-card p-6 rounded-2xl border border-slate-800">
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="font-mono text-xs text-cyan-400">May 2025 - June 2025</span>
+                            <span class="text-xs px-2 py-0.5 rounded bg-slate-900 text-slate-400">Internship</span>
+                        </div>
+                        <h4 class="font-bold text-white text-base">Cyber Security Analyst</h4>
+                        <p class="text-xs text-slate-400 mb-3">Demmisto Technologies Pvt. Ltd.</p>
+                        <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
+                            <li>Email security, phishing email investigation, and authentication testing.</li>
+                            <li>Simulated MITM attacks and malware behaviors to evaluate defense strategies.</li>
+                            <li>Explored USB Rubber Ducky attack vectors and endpoint protection controls.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-7 h-7 rounded-full border border-emerald-400 bg-slate-950 text-emerald-400 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 shadow-lg shadow-emerald-500/20">
+                        <i class="fa-solid fa-file-shield text-xs"></i>
+                    </div>
+                    <div class="w-[calc(100%-2.5rem)] md:w-[calc(50%-2rem)] glass-card p-6 rounded-2xl border border-slate-800">
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="font-mono text-xs text-emerald-400">July 2024 - Nov 2024</span>
+                            <span class="text-xs px-2 py-0.5 rounded bg-slate-900 text-slate-400">Full-Time</span>
+                        </div>
+                        <h4 class="font-bold text-white text-base">Fraud Documentation Analyst</h4>
+                        <p class="text-xs text-slate-400 mb-3">Mass Callnet Pvt. Ltd.</p>
+                        <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
+                            <li>Validated identity documentation ([Aadhaar Omitted], PAN, Passports, Transport Permits).</li>
+                            <li>Detected document tampering, identity fraud, and compliance mismatches.</li>
+                            <li>Maintained data privacy standards while handling international documents.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-800/60">
+            <div class="text-center mb-12">
+                <h2 class="text-xs font-mono text-cyan-400 tracking-widest uppercase mb-2"></h2>
+                <h3 class="text-3xl heading-serif font-bold text-white">Certifications & Summits</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Cert 1 -->
+                <div class="glass-card p-6 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-cyan-400/50 transition">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400">
+                            <i class="fa-solid fa-award text-xl"></i>
+                        </div>
+                        <span class="font-mono text-xs text-slate-400">February 2025</span>
+                        <h4 class="font-bold text-white text-base">DEFEND - X CYBER SUMMIT</h4>
+                        <p class="text-xs text-slate-400">Participated in advanced cybersecurity summit workshops focusing on threat vectors and incident handling.</p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <span class="text-xs text-emerald-400 font-mono"><i class="fa-solid fa-circle-check mr-1"></i> Verified</span>
+                    </div>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="glass-card p-6 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-cyan-400/50 transition">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400">
+                            <i class="fa-solid fa-robot text-xl"></i>
+                        </div>
+                        <span class="font-mono text-xs text-slate-400">June 2025</span>
+                        <h4 class="font-bold text-white text-base">Masterclass of Cybersecurity in AI</h4>
+                        <p class="text-xs text-slate-400">Organized by Demmisto Technology Pvt. Ltd. Focused on AI-driven cybersecurity applications and threat detection.</p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <span class="text-xs text-emerald-400 font-mono"><i class="fa-solid fa-circle-check mr-1"></i> Verified</span>
+                    </div>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="glass-card p-6 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-cyan-400/50 transition">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400">
+                            <i class="fa-solid fa-certificate text-xl"></i>
+                        </div>
+                        <span class="font-mono text-xs text-slate-400">December 2025</span>
+                        <h4 class="font-bold text-white text-base">Cyber Security Analyst Virtual Experience</h4>
+                        <p class="text-xs text-slate-400">Organized by Tata - Forage. Completed practical simulation tasks covering network auditing and triage.</p>
+                    </div>
+                    <div class="pt-4 mt-4 border-t border-slate-800/80 flex items-center justify-between">
+                        <span class="text-xs text-emerald-400 font-mono"><i class="fa-solid fa-circle-check mr-1"></i> Verified</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-800/60">
+            <div class="text-center mb-8 space-y-3">
+                <h2 class="text-xs font-mono text-cyan-400 tracking-widest uppercase"></h2>
+                <h3 class="text-3xl heading-serif sm:text-4xl font-extrabold text-white">Connect with Me</h3>
+                <p class="text-slate-300 max-w-xl mx-auto text-sm sm:text-base font-sans">
+                    Feel free to reach out to me on any of the platforms below or drop me an email. Let's connect!
+                </p>
+            </div>
+
+            <!-- Social Links Icons Centered -->
+            <div class="flex items-center justify-center gap-6 py-6">
+                <!-- Email / Gmail -->
+                <a href="mailto:jaiminmkw@gmail.com" target="_blank" title="Send Email" class="w-14 h-14 rounded-2xl glass-card flex items-center justify-center text-red-400 border border-slate-800 hover:border-red-400/60 hover:scale-110 hover:shadow-lg hover:shadow-red-500/20 transition duration-300">
+                    <i class="fa-solid fa-envelope text-2xl"></i>
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com/Jaiminmkw" target="_blank" title="GitHub Profile" class="w-14 h-14 rounded-2xl glass-card flex items-center justify-center text-slate-200 border border-slate-800 hover:border-cyan-400/60 hover:scale-110 hover:shadow-lg hover:shadow-cyan-500/20 transition duration-300">
+                    <i class="fa-brands fa-github text-2xl"></i>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/jaimin-makwana-894577366" target="_blank" title="LinkedIn Profile" class="w-14 h-14 rounded-2xl glass-card flex items-center justify-center text-cyan-400 border border-slate-800 hover:border-cyan-400/60 hover:scale-110 hover:shadow-lg hover:shadow-cyan-500/20 transition duration-300">
+                    <i class="fa-brands fa-linkedin-in text-2xl"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="glass-card border-t border-slate-800 py-8 px-4 text-center space-y-3 font-mono">
+        <p class="text-xs sm:text-sm text-slate-300 font-medium">
+            Connect With Me Because | <span class="italic text-cyan-400">"In a world full of vulnerabilities, connection is our strongest defense."</span>
+        </p>
+        <p class="text-xs text-slate-500">© 2026 Jaimin Makwana. All rights reserved.</p>
+    </footer>
+
+    <!-- Mobile Navigation Toggle Script -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
